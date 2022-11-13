@@ -27,4 +27,13 @@
         <li>{{.}}</li>
     {{/frasesDoDia}}
     </ul>
+
+    <hr/>
+    <h2>Produtos acima de  R$ 12</h2>
+    
+    <ul>
+    {{#produtosAcima}}
+        <li>{{title}} - R$ {{price}}</li>
+    {{/produtosAcima}}
+    </ul>
 {{>partials/footer}}
